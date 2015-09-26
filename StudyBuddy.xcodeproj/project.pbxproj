@@ -14,6 +14,11 @@
 		197E677C1BB64EA100C3B85C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 197E677A1BB64EA100C3B85C /* LaunchScreen.storyboard */; };
 		197E67871BB64EA100C3B85C /* StudyBuddyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197E67861BB64EA100C3B85C /* StudyBuddyTests.swift */; };
 		197E67921BB64EA100C3B85C /* StudyBuddyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197E67911BB64EA100C3B85C /* StudyBuddyUITests.swift */; };
+		197E67A41BB6773500C3B85C /* AddedCoursesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197E67A31BB6773500C3B85C /* AddedCoursesTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		197E67A61BB677E100C3B85C /* DepartmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197E67A51BB677E100C3B85C /* DepartmentTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		197E67A81BB677F800C3B85C /* CourseNameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197E67A71BB677F800C3B85C /* CourseNameTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		197E67AA1BB6860100C3B85C /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197E67A91BB6860100C3B85C /* HomePageViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		197E67AC1BB6F10B00C3B85C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 197E67AB1BB6F10B00C3B85C /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		197E678D1BB64EA100C3B85C /* StudyBuddyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StudyBuddyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		197E67911BB64EA100C3B85C /* StudyBuddyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyBuddyUITests.swift; sourceTree = "<group>"; };
 		197E67931BB64EA100C3B85C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		197E67A31BB6773500C3B85C /* AddedCoursesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddedCoursesTableViewCell.swift; path = ../AddedCoursesTableViewCell.swift; sourceTree = "<group>"; };
+		197E67A51BB677E100C3B85C /* DepartmentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepartmentTableViewCell.swift; sourceTree = "<group>"; };
+		197E67A71BB677F800C3B85C /* CourseNameTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseNameTableViewCell.swift; sourceTree = "<group>"; };
+		197E67A91BB6860100C3B85C /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		197E67AB1BB6F10B00C3B85C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				197E67AC1BB6F10B00C3B85C /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +88,7 @@
 		197E67651BB64EA100C3B85C = {
 			isa = PBXGroup;
 			children = (
+				197E67AB1BB6F10B00C3B85C /* CoreLocation.framework */,
 				197E67701BB64EA100C3B85C /* StudyBuddy */,
 				197E67851BB64EA100C3B85C /* StudyBuddyTests */,
 				197E67901BB64EA100C3B85C /* StudyBuddyUITests */,
@@ -97,6 +109,10 @@
 		197E67701BB64EA100C3B85C /* StudyBuddy */ = {
 			isa = PBXGroup;
 			children = (
+				197E67A31BB6773500C3B85C /* AddedCoursesTableViewCell.swift */,
+				197E67A51BB677E100C3B85C /* DepartmentTableViewCell.swift */,
+				197E67A91BB6860100C3B85C /* HomePageViewController.swift */,
+				197E67A71BB677F800C3B85C /* CourseNameTableViewCell.swift */,
 				197E67711BB64EA100C3B85C /* AppDelegate.swift */,
 				197E67731BB64EA100C3B85C /* ViewController.swift */,
 				197E67751BB64EA100C3B85C /* Main.storyboard */,
@@ -256,7 +272,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				197E67741BB64EA100C3B85C /* ViewController.swift in Sources */,
+				197E67A81BB677F800C3B85C /* CourseNameTableViewCell.swift in Sources */,
+				197E67AA1BB6860100C3B85C /* HomePageViewController.swift in Sources */,
 				197E67721BB64EA100C3B85C /* AppDelegate.swift in Sources */,
+				197E67A41BB6773500C3B85C /* AddedCoursesTableViewCell.swift in Sources */,
+				197E67A61BB677E100C3B85C /* DepartmentTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
