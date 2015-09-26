@@ -11,9 +11,10 @@ import CoreLocation
 import MapKit
 
 
-class HomePageViewController: UIViewController, CLLocationManagerDelegate {
+class HomePageViewController: UIViewController, CLLocationManagerDelegate, UICollectionViewDataSource, UICollectionViewDelegate {
     
     var locationManager: CLLocationManager!
+    var collectionData: [String] = ["CC 303", "CS 429", "M 340L", "PHY 301M", "HIS 316K"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,5 +54,13 @@ class HomePageViewController: UIViewController, CLLocationManagerDelegate {
         print("Error while updating location " + error.localizedDescription)
     }
     
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell: ClassCollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! ClassCollectionViewCell
+        cell.classLabel.text = collectionData[indexPath.row]
+        return cell
+    }
     
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return collectionData.count
+    }
 }
