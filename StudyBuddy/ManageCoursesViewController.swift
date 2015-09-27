@@ -22,6 +22,12 @@ class ManageCoursesViewController: UIViewController {
     }
     
 
+    @IBAction func backButtonPressed(sender: AnyObject) {
+        self.navigationController?.popViewControllerAnimated(true)
+    }
+    
+    
+    
     /*
     // MARK: - Navigation
 

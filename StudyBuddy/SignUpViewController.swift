@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class SignUpViewController: UIViewController {
 
@@ -24,6 +25,12 @@ class SignUpViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?){
+        view.endEditing(true)
+        super.touchesBegan(touches, withEvent: event)
+    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -31,6 +38,7 @@ class SignUpViewController: UIViewController {
     }
     @IBAction func signUpButtonPressed(sender: AnyObject) {
         
+        //if any fields are empty
         if (firstNameTF.text!.isEmpty || lastNameTF.text!.isEmpty || emailTF.text!.isEmpty || passwordTF.text!.isEmpty || confirmPassTF.text!.isEmpty)
         {
             let alert = UIAlertController(title: "All Fields Are Required", message: "Check that all the fields are filled in.", preferredStyle: UIAlertControllerStyle.Alert)
@@ -38,7 +46,8 @@ class SignUpViewController: UIViewController {
             self.presentViewController(alert, animated: true, completion: nil)
             return
         }
-        if(passwordTF.text != confirmPassTF.text)
+        //if passwords don't match
+        else if(passwordTF.text != confirmPassTF.text)
         {
             let alert = UIAlertController(title: "Passwords Don't Match", message: "Try Again", preferredStyle: UIAlertControllerStyle.Alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
@@ -46,8 +55,78 @@ class SignUpViewController: UIViewController {
             return
         }
         
-        let next = self.storyboard?.instantiateViewControllerWithIdentifier("homePage") as! UINavigationController
-        self.presentViewController(next, animated: true, completion: nil)
+        
+        //Sign up-parse
+        let user = PFUser()
+        user.setObject(firstNameTF.text!, forKey: "firstName")
+        user.setObject(lastNameTF.text!, forKey: "lastName")
+        user.username = emailTF.text
+        user.email = emailTF.text
+        user.password = passwordTF.text
+        
+        user.signUpInBackgroundWithBlock({
+            (succeeded: Bool, error: NSError?) -> Void in
+            if let error = error {
+                _ = error.userInfo["error"] as? NSString
+            } else {
+            
+            }
+            dispatch_async(dispatch_get_main_queue(), {
+                self.firstNameTF.text = ""
+                self.lastNameTF.text = ""
+                self.emailTF.text = ""
+                self.passwordTF.text = ""
+                self.confirmPassTF.text = ""
+                
+                let next = self.storyboard?.instantiateViewControllerWithIdentifier("welcomeVC") as! WelcomeViewController
+                self.presentViewController(next, animated: true, completion: nil)
+            })
+        })
+
+        
+        
+        //Send data to server
+//        let myUrl = NSURL(string: "http://ericyeh.me/studybuddy/mobile/register.php")
+//        let request = NSMutableURLRequest(URL: myUrl!)
+//        request.HTTPMethod = "POST"
+//        
+//        let postString = "firstName=" + firstNameTF.text! + "&lastName=" + lastNameTF.text! + "&email=" + emailTF.text! + "&password=" + passwordTF.text!
+//        
+//        request.HTTPBody = postString.dataUsingEncoding(NSUTF8StringEncoding)
+//        
+//        let task = NSURLSession.sharedSession().dataTaskWithRequest(request) {
+//            data, response, error in
+//            
+//            if error != nil {
+//                print("error=\(error)")
+//                return
+//            }
+//            
+//            // You can print out response object
+//            print("response = \(response)")
+//            
+//            // Print out response body
+//            let responseString = NSString(data: data!, encoding: NSUTF8StringEncoding)
+//            print("responseString = \(responseString)")
+//
+//            
+//            var json: AnyObject?
+//            
+//            do {
+//                 json = try NSJSONSerialization.JSONObjectWithData(data!, options: .MutableContainers) as? NSDictionary
+//                print(json)
+//            } catch let err as NSError {
+//                print(err)
+//            }
+//        
+//            
+//        }
+//        
+//        task.resume()
+        
+        
+//        let next = self.storyboard?.instantiateViewControllerWithIdentifier("welcomeVC") as! WelcomeViewController
+//        self.presentViewController(next, animated: true, completion: nil)
 
     }
     

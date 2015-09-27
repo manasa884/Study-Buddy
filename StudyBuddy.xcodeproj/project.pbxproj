@@ -23,6 +23,22 @@
 		197E67B21BB7219C00C3B85C /* ManageCoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197E67B11BB7219C00C3B85C /* ManageCoursesViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		197E67B61BB72AD600C3B85C /* AddCourseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197E67B51BB72AD600C3B85C /* AddCourseTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		197E67B81BB73B3A00C3B85C /* ClassCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197E67B71BB73B3A00C3B85C /* ClassCollectionViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		1984882A1BB749B30039066E /* ChangePassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198488291BB749B30039066E /* ChangePassViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		1984882C1BB74A560039066E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1984882B1BB74A560039066E /* LoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		1984882E1BB788200039066E /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1984882D1BB788200039066E /* WelcomeViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		19E223431BB7CE7F0011455B /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E223401BB7CE7F0011455B /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
+		19E223441BB7CE7F0011455B /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E223411BB7CE7F0011455B /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
+		19E223451BB7CE7F0011455B /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E223421BB7CE7F0011455B /* ParseUI.framework */; settings = {ASSET_TAGS = (); }; };
+		19E223471BB7E28B0011455B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E223461BB7E28B0011455B /* AudioToolbox.framework */; };
+		19E223491BB7E2900011455B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E223481BB7E2900011455B /* Security.framework */; };
+		19E2234B1BB7E29C0011455B /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E2234A1BB7E29C0011455B /* libsqlite3.tbd */; };
+		19E2234D1BB7E2A50011455B /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E2234C1BB7E2A50011455B /* Accounts.framework */; };
+		19E2234F1BB7E2AB0011455B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E2234E1BB7E2AB0011455B /* CFNetwork.framework */; };
+		19E223511BB7E2BC0011455B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E223501BB7E2BC0011455B /* CoreGraphics.framework */; };
+		19E223531BB7E6920011455B /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E223521BB7E6920011455B /* Social.framework */; };
+		19E223551BB7E6A10011455B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E223541BB7E6A10011455B /* StoreKit.framework */; };
+		19E223571BB7E6A70011455B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E223561BB7E6A70011455B /* QuartzCore.framework */; };
+		19E223591BB7E70A0011455B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E223581BB7E70A0011455B /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +81,23 @@
 		197E67B11BB7219C00C3B85C /* ManageCoursesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageCoursesViewController.swift; sourceTree = "<group>"; };
 		197E67B51BB72AD600C3B85C /* AddCourseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddCourseTableViewController.swift; path = ../AddCourseTableViewController.swift; sourceTree = "<group>"; };
 		197E67B71BB73B3A00C3B85C /* ClassCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassCollectionViewCell.swift; sourceTree = "<group>"; };
+		198488291BB749B30039066E /* ChangePassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePassViewController.swift; sourceTree = "<group>"; };
+		1984882B1BB74A560039066E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1984882D1BB788200039066E /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		19E2233C1BB7CC940011455B /* StudyBuddy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StudyBuddy-Bridging-Header.h"; sourceTree = "<group>"; };
+		19E223401BB7CE7F0011455B /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		19E223411BB7CE7F0011455B /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		19E223421BB7CE7F0011455B /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		19E223461BB7E28B0011455B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		19E223481BB7E2900011455B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		19E2234A1BB7E29C0011455B /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		19E2234C1BB7E2A50011455B /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		19E2234E1BB7E2AB0011455B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		19E223501BB7E2BC0011455B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		19E223521BB7E6920011455B /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		19E223541BB7E6A10011455B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		19E223561BB7E6A70011455B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		19E223581BB7E70A0011455B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +105,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19E223591BB7E70A0011455B /* SystemConfiguration.framework in Frameworks */,
+				19E223571BB7E6A70011455B /* QuartzCore.framework in Frameworks */,
+				19E223551BB7E6A10011455B /* StoreKit.framework in Frameworks */,
+				19E223531BB7E6920011455B /* Social.framework in Frameworks */,
+				19E2234F1BB7E2AB0011455B /* CFNetwork.framework in Frameworks */,
+				19E223511BB7E2BC0011455B /* CoreGraphics.framework in Frameworks */,
+				19E2234D1BB7E2A50011455B /* Accounts.framework in Frameworks */,
+				19E2234B1BB7E29C0011455B /* libsqlite3.tbd in Frameworks */,
+				19E223491BB7E2900011455B /* Security.framework in Frameworks */,
+				19E223471BB7E28B0011455B /* AudioToolbox.framework in Frameworks */,
 				197E67AC1BB6F10B00C3B85C /* CoreLocation.framework in Frameworks */,
+				19E223441BB7CE7F0011455B /* Parse.framework in Frameworks */,
+				19E223451BB7CE7F0011455B /* ParseUI.framework in Frameworks */,
+				19E223431BB7CE7F0011455B /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,7 +142,19 @@
 		197E67651BB64EA100C3B85C = {
 			isa = PBXGroup;
 			children = (
-				197E67AB1BB6F10B00C3B85C /* CoreLocation.framework */,
+				19E223581BB7E70A0011455B /* SystemConfiguration.framework */,
+				19E223561BB7E6A70011455B /* QuartzCore.framework */,
+				19E223541BB7E6A10011455B /* StoreKit.framework */,
+				19E223521BB7E6920011455B /* Social.framework */,
+				19E223501BB7E2BC0011455B /* CoreGraphics.framework */,
+				19E2234E1BB7E2AB0011455B /* CFNetwork.framework */,
+				19E2234C1BB7E2A50011455B /* Accounts.framework */,
+				19E2234A1BB7E29C0011455B /* libsqlite3.tbd */,
+				19E223481BB7E2900011455B /* Security.framework */,
+				19E223461BB7E28B0011455B /* AudioToolbox.framework */,
+				19E223401BB7CE7F0011455B /* Bolts.framework */,
+				19E223411BB7CE7F0011455B /* Parse.framework */,
+				19E223421BB7CE7F0011455B /* ParseUI.framework */,
 				197E67701BB64EA100C3B85C /* StudyBuddy */,
 				197E67851BB64EA100C3B85C /* StudyBuddyTests */,
 				197E67901BB64EA100C3B85C /* StudyBuddyUITests */,
@@ -124,13 +182,18 @@
 				197E67711BB64EA100C3B85C /* AppDelegate.swift */,
 				197E67731BB64EA100C3B85C /* ViewController.swift */,
 				197E67AD1BB70B0900C3B85C /* SignUpViewController.swift */,
+				1984882D1BB788200039066E /* WelcomeViewController.swift */,
 				197E67B11BB7219C00C3B85C /* ManageCoursesViewController.swift */,
 				197E67B51BB72AD600C3B85C /* AddCourseTableViewController.swift */,
 				197E67B71BB73B3A00C3B85C /* ClassCollectionViewCell.swift */,
 				197E67751BB64EA100C3B85C /* Main.storyboard */,
+				1984882B1BB74A560039066E /* LoginViewController.swift */,
+				198488291BB749B30039066E /* ChangePassViewController.swift */,
 				197E67781BB64EA100C3B85C /* Assets.xcassets */,
 				197E677A1BB64EA100C3B85C /* LaunchScreen.storyboard */,
 				197E677D1BB64EA100C3B85C /* Info.plist */,
+				197E67AB1BB6F10B00C3B85C /* CoreLocation.framework */,
+				19E2233C1BB7CC940011455B /* StudyBuddy-Bridging-Header.h */,
 			);
 			path = StudyBuddy;
 			sourceTree = "<group>";
@@ -215,6 +278,7 @@
 		197E67661BB64EA100C3B85C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Manasa Tipparam";
 				TargetAttributes = {
@@ -284,12 +348,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1984882C1BB74A560039066E /* LoginViewController.swift in Sources */,
 				197E67B21BB7219C00C3B85C /* ManageCoursesViewController.swift in Sources */,
 				197E67B81BB73B3A00C3B85C /* ClassCollectionViewCell.swift in Sources */,
 				197E67741BB64EA100C3B85C /* ViewController.swift in Sources */,
 				197E67AE1BB70B0900C3B85C /* SignUpViewController.swift in Sources */,
 				197E67A81BB677F800C3B85C /* CourseNameTableViewCell.swift in Sources */,
+				1984882E1BB788200039066E /* WelcomeViewController.swift in Sources */,
 				197E67AA1BB6860100C3B85C /* HomePageViewController.swift in Sources */,
+				1984882A1BB749B30039066E /* ChangePassViewController.swift in Sources */,
 				197E67721BB64EA100C3B85C /* AppDelegate.swift in Sources */,
 				197E67A41BB6773500C3B85C /* AddedCoursesTableViewCell.swift in Sources */,
 				197E67A61BB677E100C3B85C /* DepartmentTableViewCell.swift in Sources */,
@@ -433,13 +500,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = StudyBuddy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.manasa.StudyBuddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "StudyBuddy/StudyBuddy-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -447,13 +521,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = StudyBuddy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.manasa.StudyBuddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "StudyBuddy/StudyBuddy-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -524,6 +604,7 @@
 				197E67981BB64EA100C3B85C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		197E67991BB64EA100C3B85C /* Build configuration list for PBXNativeTarget "StudyBuddyTests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +613,7 @@
 				197E679B1BB64EA100C3B85C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		197E679C1BB64EA100C3B85C /* Build configuration list for PBXNativeTarget "StudyBuddyUITests" */ = {
 			isa = XCConfigurationList;
@@ -540,6 +622,7 @@
 				197E679E1BB64EA100C3B85C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

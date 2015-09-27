@@ -6,6 +6,11 @@
 	<string>en</string>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>We need your location to help you find study buddies near you</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>

@@ -9,9 +9,12 @@
 import UIKit
 import CoreLocation
 import MapKit
+import Parse
 
 
 class HomePageViewController: UIViewController, CLLocationManagerDelegate, UICollectionViewDataSource, UICollectionViewDelegate {
+    
+    let user = PFUser.currentUser();
     
     var locationManager: CLLocationManager!
     var collectionData: [String] = ["CC 303", "CS 429", "M 340L", "PHY 301M", "HIS 316K"]
@@ -43,6 +46,10 @@ class HomePageViewController: UIViewController, CLLocationManagerDelegate, UICol
         //let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
         
         let currentLocation = CLLocation()
+        //user!.setObject(currentLocation, forKey: "currentLocation")
+//        PFGeoPoint.geoPointForCurrentLocationInBackground({
+//            (geoPoint: PFGeoPoint!, error: NSError?)
+//        })
         
         let locationLat = currentLocation.coordinate.latitude
         let locationLong = currentLocation.coordinate.longitude
